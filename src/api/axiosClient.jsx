@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const axiosClient = axios.create({
-    baseURL: 'https://quang-ecommerce.herokuapp.com',
+    baseURL: 'https://ecommerce-be-web.vercel.app',
 });
 
 //Interceptors
