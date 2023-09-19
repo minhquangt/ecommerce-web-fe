@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { getHistory, paymentSelector } from 'store/reducers/paymentSlice';
 import { userSelector } from 'store/reducers/userSlice';
+import './history.scss';
 
 function History() {
     const dispatch = useDispatch();
@@ -27,7 +28,7 @@ function History() {
                     </thead>
                     <tbody>
                         {payment.history.map((item, index) => (
-                            <tr>
+                            <tr key={index}>
                                 <th>{index + 1}</th>
                                 <td>{item._id}</td>
                                 <td>{item.createdAt.slice(0, 10)}</td>

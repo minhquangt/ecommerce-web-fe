@@ -21,9 +21,9 @@ function CustomerFavorites() {
                     level
                 </span>
             </div>
-            <div className='products'>
+            <div className='row products'>
                 {favoriteProduct?.favorite?.map((product) => (
-                    <div className='col-3' key={product._id}>
+                    <div className='col-md-3 col-6 product-item' key={product._id}>
                         <ProductItem product={product} />
                     </div>
                 ))}

@@ -1,5 +1,6 @@
 .contact {
     margin-left: 20px;
+    padding-top: 20px;
 }
 
 .contact h1 {
@@ -39,4 +40,14 @@
     color: white;
     width: 80px;
     padding: 8px;
+}
+
+@media only screen and (max-width: 768px) {
+    .contact {
+        margin-left: 0;
+        form {
+            width: 86%;
+            margin: auto;
+        }
+    }
 }
